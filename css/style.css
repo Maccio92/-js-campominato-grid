@@ -22,6 +22,14 @@ body{
 .header, .difficult {
     width: 30%;
 }
+.header{
+    display: flex;
+    align-items: center;
+}
+.header img{
+    width: 8%;
+    margin-right: 1em;
+}
 #diff{
     width: 30%;
 }
