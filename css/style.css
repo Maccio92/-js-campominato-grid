@@ -29,7 +29,7 @@ body{
     width: 20%;
 }
 main{
- height: 90vh;
+ height: 81vh;
 }
 .footer {
     width: 100%;
@@ -47,10 +47,21 @@ main{
     cursor: pointer;
     border: 2px solid black;
   }
-  .field {
+  .container {
     display: flex;
     flex-wrap: wrap;
     width: 500px;
     height: 500px;
     margin: 100px auto;
+  }
+  .field{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .active{
+      display: none;
+  }
+  .show{
+      display: block;
   }
