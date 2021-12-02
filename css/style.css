@@ -67,9 +67,12 @@ main{
     flex-wrap: wrap;
     height: 100%;
   }
-  .active{
+  .screen{
       display: none;
   }
   .show{
       display: block;
   }
+.bg-active{
+    background-color: #6495ed;
+}
