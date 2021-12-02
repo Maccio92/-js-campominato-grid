@@ -13,7 +13,7 @@ button.addEventListener ('click', function () {
     let container = document.querySelector(".field");
     let row;
     let col;
-
+//  Eventi in base alla scelta del livello
     switch (level.value) {
         case 'easy':
                 container.innerHTML = "";
@@ -37,64 +37,6 @@ button.addEventListener ('click', function () {
                 createSquare(row, col);
                 break;
     }
-//  Evento 1 Scelta livello Easy
-    // if( level.value == 'easy'){
-    //     container.innerHTML = "";
-    //     active.classList.add("show");
-    //     row = 10;
-    //     col = 10;
-    //     createSquare(row, col);
-    //     // let numberSquareEasy = row * col;
-    //     // // console.log(numbersEasy);
-    //     // for (let i = 0; i < numberSquareEasy; i++) {
-    //     //     let square = document.createElement('div');
-    //     //     square.classList.add('square');
-    //     //     square.style.width = `calc(100% / ${col})`;
-    //     //     square.style.height = `calc(100% / ${row})`;
-    //     //     // console.log(square.style);
-    //     //     let numbersEasy = i + 1;
-    //     //     square.append(numbersEasy);
-    //     //     container.append(square);
-    //     // }
-    //     // Evento 2 Scelta livello Medium
-    // } else if ( level.value == 'medium'){
-    //     container.innerHTML = "";
-    //     active.classList.add("show");
-    //     row = 9;
-    //     col = 9;
-    //     createSquare(row, col);
-    //     // let numberSquareMedium = row * col;
-    //     // // console.log(numbersMedium);
-    //     // for (let i = 0; i < numberSquareMedium; i++) {
-    //     //     let square = document.createElement('div');
-    //     //     square.classList.add('square');
-    //     //     square.style.width = `calc(100% / ${col})`;
-    //     //     square.style.height = `calc(100% / ${row})`;
-    //     //     // console.log(square.style);
-    //     //     let numbersMedium = i + 1;
-    //     //     square.append(numbersMedium);
-    //     //     container.append(square);
-    //     // }
-    //     // Evento 3 Scelta livello Hard
-    // } else {
-    //     container.innerHTML = "";
-    //     active.classList.add("show");
-    //     row = 7;
-    //     col = 7;
-    //     // let numberSquareHard = row * col;
-    //     createSquare(row, col);
-    //     // console.log(numbersHard);
-    //     // for (let i = 0; i < numberSquareHard; i++) {
-    //     //     let square = document.createElement('div');
-    //     //     square.classList.add('square');
-    //     //     square.style.width = `calc(100% / ${col})`;
-    //     //     square.style.height = `calc(100% / ${row})`;
-    //     //     // console.log(square.style);
-    //     //     let numbersHard = i + 1;
-    //     //     square.append(numbersHard);
-    //     //     container.append(square);
-        
-    // }})
     // Funzione per creare le griglie
     function createSquare(row, col) {
         let container = document.querySelector(".field");
@@ -104,7 +46,6 @@ button.addEventListener ('click', function () {
             square.classList.add('square');
             square.style.width = `calc(100% / ${col})`;
             square.style.height = `calc(100% / ${row})`;
-            // console.log(square.style);
             let numbers = i + 1;
             square.append(numbers);
             container.append(square);
@@ -112,6 +53,5 @@ button.addEventListener ('click', function () {
             // Aggiungere BG al clic
             square.addEventListener ('click', function () {
                 this.classList.add ('bg-active');
-            })}}
-        
-            })
+    })}}
+})

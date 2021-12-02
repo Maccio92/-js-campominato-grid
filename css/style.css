@@ -60,7 +60,8 @@ main{
     flex-wrap: wrap;
     width: 500px;
     height: 500px;
-    margin: 100px auto;
+    margin: 0 auto;
+    
   }
   .field{
     display: flex;
